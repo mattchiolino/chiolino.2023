@@ -28,7 +28,7 @@
 }
 
 .logo__image {
-  max-height: 50px;
+  max-height: 2rem;
 }
 
 /* Nav */
@@ -103,7 +103,7 @@
           display: block;
           padding: 10px 0;
           margin-bottom: 0;
-          font-size: 18px;
+          font-size: 1.125rem;
           text-align: right;
           transition: color .25s ease;
 
@@ -149,7 +149,7 @@
     .nav__link {
       position: relative;
       padding: 12px 0;
-      font-family: $heading-font-family;
+      font-family: $base-font-family;
       font-size: 18px;
       line-height: 1;
       font-weight: 500;

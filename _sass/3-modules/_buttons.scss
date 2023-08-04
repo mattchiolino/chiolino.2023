@@ -1,8 +1,8 @@
 /* Buttons */
 .button {
   display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1;
   text-decoration: none;
   border-radius: 60px;
@@ -29,7 +29,7 @@
 
   &--primary {
     padding: 20px 32px;
-    color: var(--white);
+    color: var(--dark);
     background-color: var(--button-background-color);
 
     &:hover {

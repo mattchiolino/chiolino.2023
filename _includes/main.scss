@@ -111,12 +111,20 @@
 /* >>>>>>>>>>>>>> :: 4.3-Tags Page <<<<<<<<<<<<<<< */
 @import '4-layouts/tags-page';
 
+.logo svg {
+    max-height: 1.5rem;
+}
+
+.dark-mode .logo svg > * {
+    fill: var(--primary-color);
+}
+
 .typewrite {
 	height: 72px;
     display: block;
     .wrap {
         background: var(--primary-color);
-        color: var(--white);
+        color: var(--dark);
         padding: 0 4px;
     }
 }

@@ -34,7 +34,7 @@
   font-size: 21px;
   font-weight: normal;
   text-align: center;
-  color: var(--text-alt-color-2);
+  color: var(--dark);
 }
 
 .section__description {
@@ -50,10 +50,10 @@
   line-height: 1;
   white-space: nowrap;
   will-change: transform;
-  color: var(--primary-color);
+  color: var(--light-blue);
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--dark);
     opacity: .85;
     i {
       transform: translateX(2px);
