@@ -32,26 +32,26 @@
 
 .hero__title {
   margin-bottom: 20px;
-  font-size: 62px;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 700;
   color: var(--heading-font-color);
 
   @media (max-width: $wide) {
-    font-size: 48px;
+    font-size: 4rem;
   }
 
   @media (max-width: $mobile) {
-    font-size: 36px;
+    font-size: 3rem;
   }
 }
 
 .hero__description {
   margin-bottom: 0;
-  font-size: 21px;
+  font-size: 1.25rem;
   color: var(--text-alt-color);
 
   @media (max-width: $wide) {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   @media (max-width: $desktop) {
@@ -60,7 +60,7 @@
 }
 
 .hero__subscribe {
-  margin-top: 28px;
+  margin-top: 2rem;
 
   .subscribe-form {
     display: flex;
@@ -71,9 +71,9 @@
     width: 100%;
     flex: 1;
     margin-right: 8px;
-    padding: 24px 28px;
-    font-size: 16px;
-    line-height: 21px;
+    padding: 2rem 2.25rem;
+    font-size: 1rem;
+    line-height: 1.25;
     border: 1px solid var(--border-color);
     border-radius: 60px;
     outline: 0;

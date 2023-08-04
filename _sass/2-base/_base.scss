@@ -19,11 +19,11 @@ body {
   }
 
   @media (max-width: $desktop) {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   @media (max-width: $mobile) {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 

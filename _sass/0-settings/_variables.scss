@@ -15,23 +15,24 @@ $global-transition: all .2s;
 // *****************
 // Typography
 // *****************
-$base-font-size: 20px;
+$base-font-size: 100%;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Rubik', Helvetica Neue, Helvetica, Arial, sans-serif;
-$base-line-height: 1.6;
+$base-font-family: 'Work Sans', Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+$base-line-height: 1.5;
 
 // Headings
-$heading-font-weight: 800;
-$heading-font-family: 'Rubik', Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-weight: 700;
+$heading-font-family: 'Fraunces', Superclarendon, 'Iowan Old Style', 'Bookman Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
 
-$font-size-h1: 36px;
-$font-size-h2: 28px;
-$font-size-h3: 24px;
-$font-size-h4: 20px;
-$font-size-h5: 18px;
-$font-size-h6: 16px;
 
-$heading-line-height: 1.3;
+$font-size-h1: 3rem;
+$font-size-h2: 1.75rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1.125rem;
+$font-size-h6: 1rem;
+
+$heading-line-height: 1.25;
 $heading-letter-spacing: normal;
