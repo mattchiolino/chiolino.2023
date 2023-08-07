@@ -4,7 +4,7 @@ title: About
 description: I have over 10 years of experience designing and building custom websites and mobile applications, managing social media, helping companies with their unique branding and marketing needs. And I can help you, too.
 
 permalink: /about/
-image: '/images/candid.jpg'
+image: '/images/me.jpg'
 # image_caption: 'Photo by [Bruce Dixon](https://unsplash.com/photos/3M9WJQVHzog) on [Unsplash](https://unsplash.com/)'
 ---
 I really enjoy making things, both physical and digital. When I’m not designing or coding, you can find me outside hunting, fishing, or gardening, playing sports with my two kids, or nerding out about health and fitness.
