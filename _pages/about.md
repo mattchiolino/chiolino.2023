@@ -16,11 +16,11 @@ If you’re a business, I’m here and can help you with website design, social 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/100.jpg" loading="lazy">
-    <img src="/images/101.jpg" loading="lazy">
-    <img src="/images/102.jpg" loading="lazy">
+    <img src="/images/gopackgo.jpg" loading="lazy">
+    <img src="/images/morel.jpg" loading="lazy">
+    <img src="/images/wheeler.jpg" loading="lazy">
   </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
+  <!-- <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em> -->
 </div>
 
 <!-- Dummy books (or faux books) are books that are designed to imitate a real book by appearance to deceive people, some books may be whole with empty pages, others may be hollow or in other cases, there may be a whole panel carved with spines which are then painted to look like books, titles of some books may also be fictitious.
@@ -31,9 +31,9 @@ The advent of paperback books in the 20th century led to an explosion of popular
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/103.jpg" loading="lazy">
+    <img src="/images/family.jpg" loading="lazy">
   </div>
-  <em>Photo by <a href="https://unsplash.com/photos/TMpQ5R9mbOc" target="_blank">Caroline Hernandez</a></em>
+  <em>Photo by <a href="http://www.melaniebaetenphotography.com/" target="_blank">Melanie Baeten</a></em>
 </div>
 
 <!-- This form of the book chain has hardly changed since the eighteenth century, and has not always been this way. Thus, the author has asserted gradually with time, and the copyright dates only from the nineteenth century. For many centuries, especially before the invention of printing, each freely copied out books that passed through his hands, adding if necessary his own comments. Similarly, bookseller and publisher jobs have emerged with the invention of printing, which made the book an industrial product, requiring structures of production and marketing.

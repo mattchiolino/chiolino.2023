@@ -16,14 +16,16 @@ menu__settings:
       url: '/about/'
     - title: 'Work'
       url: '/work/'
-    - title: 'Writing'
+    - title: 'Blog'
       url: '/blog/'
-    - title: 'Pages'
-      submenu:
-      - url: '/contact/'
-        title: 'Contact'
-      - url: '/elements/'
-        title: 'Elements'
+    - title: 'Contact'
+      url: '/contact'
+    # - title: 'Pages'
+    #   submenu:
+    #   - url: '/contact/'
+    #     title: 'Contact'
+    #   - url: '/elements/'
+    #     title: 'Elements'
 
 
 #-------------------------------
@@ -31,7 +33,7 @@ menu__settings:
 author:
   author__name: Matt Chiolino
   author__bio: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, business owners, and humans.
-  # author__avatar: '/images/01.jpg'
+  author__avatar: '/images/avatar.jpeg'
 
 social:
 - {icon: "ion-logo-dribbble", link: "https://dribbble.com/mattchiolino"}
@@ -49,7 +51,7 @@ hero:
   enable: true
   hero__title: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, and business owners humans.
   hero__description:
-  hero__image: "/images/candid.jpg"
+  hero__image: "/images/forest-bg.png"
 
 
 #-------------------------------
@@ -166,20 +168,19 @@ blog:
   enable: true
 
 blog__settings:
-  blog__title: Writing
+  blog__title: Blog
   blog__description: Here you’ll find a combination of career advice, things I learn about health and fitness, workflow optimization tips, and whatever else I need to get off my chest at the current moment.
 
 
 #-------------------------------
 # Footer Settings
-footer__background__image: "/images/bg.jpg"
+footer__background__image: "/images/candid.jpg"
 
 #-------------------------------
 # Contact Settings
 contact:
-  email: matt@chiolino.com # Add your form_id
-  description: Akio comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
-
+  email: xoqojzzj
+  description: Feel free to reach out with any questions you may have and I will do my best to respond within 2-3 days.
 # NOTE
 # Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
 
@@ -187,7 +188,7 @@ contact:
 #-------------------------------
 # Comment Section (Disqus)
 disqus:
-  enable: true
+  enable: false
   disqus__identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
 
 
