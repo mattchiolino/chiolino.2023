@@ -61,6 +61,10 @@ logos:
   logos__title: I’ve worked with some great сompanies
 
 logo__items:
+  - name: Jewelers Mutual
+    link: "https://www.jewelersmutual.com/"
+    image: "/images/jewelersmutual.svg"
+
   - name: General Motors
     link: "https://www.gm.com/"
     image: "/images/generalmotors.svg"
@@ -69,17 +73,13 @@ logo__items:
     link: "https://www.sleepnumber.com/"
     image: "/images/sleepnumber.svg"
 
-  - name: Jewelers Mutual
-    link: "https://www.jewelersmutual.com/"
-    image: "/images/jewelersmutual.svg"
+  - name: J. J. Keller & Associates, Inc.
+    link: "https://www.jjkeller.com/"
+    image: "/images/jjkeller.svg"
 
   - name: Blaster Products
     link: "https://www.blasterproducts.com/"
     image: "/images/blasterproducts.svg"
-
-  - name: Your Logo Here
-    link: /contact
-    image: 
 
 #-------------------------------
 # Newsletter
@@ -101,7 +101,7 @@ work:
 #-------------------------------
 # Testimonials Section
 testimonials:
-  enable: true
+  enable: false
 
 testimonial__title: Clients
 testimonial__description:
@@ -174,7 +174,7 @@ blog__settings:
 
 #-------------------------------
 # Footer Settings
-footer__background__image: "/images/candid.jpg"
+footer__background__image: "/images/me.jpg"
 
 #-------------------------------
 # Contact Settings
