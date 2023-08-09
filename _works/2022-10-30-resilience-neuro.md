@@ -1,7 +1,7 @@
 ---
 title: Healing the System
 description: A Physical Therapist's Pursuit of Unhindered Care
-category: Web
+category: Web, Code
 date: 2022-10-30 08:01:35 +0300
 client: Resilience Neurologic Phyiscal Therapy
 role: Web Designer
