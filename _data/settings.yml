@@ -85,7 +85,7 @@ logo__items:
 # Newsletter
 mailchimp:
   enable: true
-  mailchimp__identifier: https://chiolino.us12.list-manage.com/subscribe/post?u=3901645d74f7c0f077a2fd06b&amp;id=812262985a&amp;f_id=00b644e0f0 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp__identifier: chiolino.us12.list-manage.com/subscribe/post?u=3901645d74f7c0f077a2fd06b&amp;id=812262985a&amp;f_id=00b644e0f0 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
   mailchimp__input__text: Your email address...
   mailchimp__button__text: Subscribe
 
