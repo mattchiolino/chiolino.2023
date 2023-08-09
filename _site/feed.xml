@@ -5,12 +5,12 @@
         <description>Creative Portfolio Theme for Jekyll.</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 09 Aug 2023 06:33:19 -0500</pubDate>
-        <lastBuildDate>Wed, 09 Aug 2023 06:33:19 -0500</lastBuildDate>
+        <pubDate>Wed, 09 Aug 2023 16:26:50 -0500</pubDate>
+        <lastBuildDate>Wed, 09 Aug 2023 16:26:50 -0500</lastBuildDate>
         <generator>Jekyll v4.3.2</generator>
         
             <item>
-                <title>Embracing the Suck</title>
+                <title>Embracing the Journey</title>
                 <description>&lt;p&gt;In my basement office, displayed proudly behind my right shoulder against the wood-paneled wall, is the first guitar I ever owned. As I turn on my video to address my coworkers in daily Teams meetings, it stands as a silent and constant reminder of my humble beginnings as a kid who was afraid to be vulnerable.&lt;/p&gt;
 
 &lt;p&gt;I remember the day I picked up this guitar from the local pawn shop like it was yesterday. It was nothing to marvel at — a bit dinged, scuffed and imperfect — but it also had a lot of songs left in its strings. I was an unproven musician, who couldn’t tell a chord from a strum. Something inside me was drawn to that black dreadnought, and I knew at that very moment I needed to learn how to make it sing. So, I decided then and there I was going to teach myself to play.&lt;/p&gt;
@@ -25,9 +25,9 @@
 
 &lt;div class=&quot;gallery-box&quot;&gt;
   &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/blog/guitar-closeup.jpg&quot; loading=&quot;lazy&quot; alt=&quot;closeup of the guitar&quot; /&gt;
-    &lt;img src=&quot;/images/blog/guitar-logo.jpg&quot; loading=&quot;lazy&quot; alt=&quot;label, logo inside the guitar&apos;s sound hole&quot; /&gt;
-    &lt;img src=&quot;/images/blog/guitar-dent.jpg&quot; loading=&quot;lazy&quot; alt=&quot;a dent from years of abuse&quot; /&gt;
+    &lt;img src=&quot;../images/blog/guitar-closeup.jpg&quot; loading=&quot;lazy&quot; alt=&quot;closeup of the guitar&quot; /&gt;
+    &lt;img src=&quot;../images/blog/guitar-logo.jpg&quot; loading=&quot;lazy&quot; alt=&quot;label, logo inside the guitar&apos;s sound hole&quot; /&gt;
+    &lt;img src=&quot;../images/blog/guitar-dent.jpg&quot; loading=&quot;lazy&quot; alt=&quot;a dent from years of abuse&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
