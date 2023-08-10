@@ -4,7 +4,7 @@ title: Embracing the Journey
 description: What My First Guitar Taught Me About Being (Mildly) Successful In Life
 
 date: 2023-08-07 9:52:00 +0300
-image: './images/guitar-deskview.jpg'
+image: '../images/guitar-deskview.JPG'
 tags: [career advice]
 ---
 
@@ -22,9 +22,9 @@ But this guitar has also been there during those moments of breakthrough when a 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="./images/guitar-closeup.jpg" loading="lazy" alt="closeup of the guitar">
-    <img src="./images/guitar-logo.jpg" loading="lazy" alt="label, logo inside the guitar's sound hole">
-    <img src="./images/guitar-dent.jpg" loading="lazy" alt="a dent from years of abuse">
+    <img src="../images/guitar-closeup.JPG" loading="lazy" alt="closeup of the guitar">
+    <img src="../images/guitar-logo.JPG" loading="lazy" alt="label, logo inside the guitar's sound hole">
+    <img src="../images/guitar-dent.JPG" loading="lazy" alt="a dent from years of abuse">
   </div>
 </div>
 

@@ -5,8 +5,8 @@
         <description>Creative Portfolio Theme for Jekyll.</description>
         <link>http://localhost:4000/</link>
         <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 09 Aug 2023 16:38:00 -0500</pubDate>
-        <lastBuildDate>Wed, 09 Aug 2023 16:38:00 -0500</lastBuildDate>
+        <pubDate>Thu, 10 Aug 2023 06:43:56 -0500</pubDate>
+        <lastBuildDate>Thu, 10 Aug 2023 06:43:56 -0500</lastBuildDate>
         <generator>Jekyll v4.3.2</generator>
         
             <item>
@@ -25,9 +25,9 @@
 
 &lt;div class=&quot;gallery-box&quot;&gt;
   &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;./images/guitar-closeup.jpg&quot; loading=&quot;lazy&quot; alt=&quot;closeup of the guitar&quot; /&gt;
-    &lt;img src=&quot;./images/guitar-logo.jpg&quot; loading=&quot;lazy&quot; alt=&quot;label, logo inside the guitar&apos;s sound hole&quot; /&gt;
-    &lt;img src=&quot;./images/guitar-dent.jpg&quot; loading=&quot;lazy&quot; alt=&quot;a dent from years of abuse&quot; /&gt;
+    &lt;img src=&quot;../images/guitar-closeup.JPG&quot; loading=&quot;lazy&quot; alt=&quot;closeup of the guitar&quot; /&gt;
+    &lt;img src=&quot;../images/guitar-logo.JPG&quot; loading=&quot;lazy&quot; alt=&quot;label, logo inside the guitar&apos;s sound hole&quot; /&gt;
+    &lt;img src=&quot;../images/guitar-dent.JPG&quot; loading=&quot;lazy&quot; alt=&quot;a dent from years of abuse&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
