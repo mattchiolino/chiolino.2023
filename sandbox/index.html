@@ -51,7 +51,7 @@
             height: 1px;
             width: 1px;
             pointer-events: none;
-         }
+        }
     </style>
 </head>
 
@@ -73,6 +73,9 @@
     </div>
 
     <script>
+        window.onload = function () {
+            document.getElementById("hiddenPin").focus();
+        };
         document.addEventListener('DOMContentLoaded', () => {
             const inputs = document.querySelectorAll('.pin-input');
             const hiddenPinInput = document.getElementById('hiddenPin');
