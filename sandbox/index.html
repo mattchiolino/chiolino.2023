@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Verification</title>
+    <style>
+        .pin-input {
+            width: 30px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .hidden-input {
+            /* opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            width: 1px;
+            pointer-events: none; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- This is the hidden input field -->
+    <input type="text" maxlength="6" class="hidden-input" id="hiddenPin">
+
+    <div class="pin-input-container">
+        <input type="text" maxlength="1" class="pin-input">
+        <input type="text" maxlength="1" class="pin-input">
+        <input type="text" maxlength="1" class="pin-input">
+        <input type="text" maxlength="1" class="pin-input">
+        <input type="text" maxlength="1" class="pin-input">
+        <input type="text" maxlength="1" class="pin-input">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputs = document.querySelectorAll('.pin-input');
+            const hiddenPinInput = document.getElementById('hiddenPin');
+
+            // Distribute the values from the hidden input to the visible ones
+            hiddenPinInput.addEventListener('input', (e) => {
+                const value = e.target.value;
+                if (value.length === 6 && !isNaN(value)) {
+                    for (let i = 0; i < inputs.length; i++) {
+                        inputs[i].value = value.charAt(i);
+                    }
+                }
+            });
+
+            // Focus next input on keyup
+            inputs.forEach((input, idx) => {
+                input.addEventListener('keyup', (e) => {
+                    if (e.key >= 0 && e.key <= 9) {
+                        if (idx < inputs.length - 1) {
+                            inputs[idx + 1].focus();
+                        }
+                    } else {
+                        input.value = '';
+                    }
+                });
+            });
+
+            // Handle paste event
+            inputs[0].addEventListener('paste', (e) => {
+                e.preventDefault();
+                const pastedData = e.clipboardData.getData('text/plain');
+                hiddenPinInput.value = pastedData; // Setting it in the hidden input will trigger its input event
+            });
+        });
+    </script>
+
+</body>
+
+</html>
