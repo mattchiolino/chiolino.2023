@@ -52,6 +52,7 @@
             width: 1px;
             pointer-events: none;
         }
+
         input {
             font-size: 18px;
         }
@@ -112,6 +113,18 @@
                 hiddenPinInput.value = pastedData; // Setting it in the hidden input will trigger its input event
             });
         });
+
+        let focusedElement;
+        document.addEventListener('focus', function (e) {
+            focusedElement = e.target;
+            setTimeout(function () {
+                if (focusedElement && focusedElement === document.activeElement) {
+                    window.scrollTo(0, 0);
+                    document.body.style.zoom = 1;
+                    focusedElement.focus();
+                }
+            }, 100);
+        }, true);
     </script>
 
 </body>
