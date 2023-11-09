@@ -49,7 +49,7 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, and business owners humans.
+  hero__title: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, and business owners.
   hero__description:
   hero__image: "/images/forest-bg.png"
 
