@@ -3,10 +3,10 @@
 // *****************
 
 // Spaces
-$base-spacing-unit: 16px;
+$base-spacing-unit: 1rem;
 
 // Border radius
-$global-radius: 16px;
+$global-radius: 1rem;
 
 // Transition
 $global-transition: all .2s;
@@ -19,12 +19,12 @@ $base-font-size: 100%;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Work Sans', Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+$base-font-family: "Overpass", Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 $base-line-height: 1.5;
 
 // Headings
 $heading-font-weight: 700;
-$heading-font-family: 'Fraunces', Superclarendon, 'Iowan Old Style', 'Bookman Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+$heading-font-family: "Overpass", Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 
 
 $font-size-h1: 3rem;

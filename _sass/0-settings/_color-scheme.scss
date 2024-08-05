@@ -1,14 +1,16 @@
 /* Color Scheme */
 
 :root {
-  --primary-color: #8EE0D3;
-  --white: #fff;
-  --light-gray: #FBFBF4;
-  --lighten-gray: #e7e7e7;
-  --light-blue: #087C91;
-  --blue-gray: #687385;
-  --gray: #e0e0e0;
-  --dark: #090A11;
+  --primary-color: hsl(6, 98%, 60%);
+  --white: hsl(18, 100%, 98%);
+  --light-gray: hsl(18, 100%, 95%);
+  --lighten-gray: hsl(18, 100%, 80%);
+  --primary-dark: hsl(6, 98%, 40%);
+  --blue-gray: hsl(202, 40%, 30%);
+  --gray: hsl(202, 40%, 90%);
+  --background: hsl(18, 100%, 98%);
+  --text: hsl(202, 40%, 10%);
+  --dark: hsl(202, 40%, 10%);
 
   // Background Color
   --background-color: var(--white);
@@ -17,19 +19,19 @@
   // Body Color
   --text-color: var(--dark);
   --text-alt-color: var(--blue-gray);
-  --text-alt-color-2: var(--light-blue);
+  --text-alt-color-2: var(--primary-dark);
 
   // Heading
-  --heading-font-color: var(--dark);
+  --heading-font-color: var(--text);
 
   // Link
-  --link-color: var(--dark);
+  --link-color: var(--primary-color);
   --link-color-hover: var(--dark);
 
   // Button
-  --button-color: var(--dark);
+  --button-color: var(--white);
   --button-background-color: var(--primary-color);
-  --button-background-hover: var(--light-blue);
+  --button-background-hover: var(--primary-dark);
 
   // Border
   --border-color: var(--gray);
@@ -44,14 +46,17 @@
 }
 
 :root[dark] {
-  --primary-color: #8EE0D3;
-  --white: #fff;
-  --light-gray: #FBFBF4;
+  --primary-color: hsl(6, 98%, 60%);
+  --white: hsl(60, 47%, 97%);
+  --light-gray: hsl(60, 47%, 87%);
   --gray: #9e9e9e;
   --dark: #090A11;
+  --nav-color: hsl(60, 47%, 97%);
+  --background: #090A11;
+  --text: hsl(60, 47%, 97%);
 
   // Background Color
-  --background-color: var(--dark);
+  --background-color: var(--background);
   --background-alt-color: #1d1d23;
 
   // Body Color

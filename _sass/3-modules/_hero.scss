@@ -50,6 +50,10 @@
   font-size: 1.25rem;
   color: var(--text-alt-color);
 
+  &.social .social__list {
+    justify-content: flex-start;
+  }
+
   @media (max-width: $wide) {
     font-size: 1.25rem;
   }
