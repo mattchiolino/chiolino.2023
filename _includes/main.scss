@@ -111,10 +111,6 @@
 /* >>>>>>>>>>>>>> :: 4.3-Tags Page <<<<<<<<<<<<<<< */
 @import '4-layouts/tags-page';
 
-.logo svg {
-    max-height: 1.5rem;
-}
-
 .dark-mode .logo svg > * {
     fill: var(--text-color);
 }

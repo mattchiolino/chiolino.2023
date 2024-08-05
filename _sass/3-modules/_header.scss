@@ -32,7 +32,13 @@
 }
 
 .logo__image {
-  max-height: 2rem;
+  max-height: 1.5rem;
+}
+
+@media (max-width: $mobile) {
+  .logo__image {
+    max-height: 1rem;
+  }
 }
 
 /* Nav */
@@ -41,19 +47,19 @@
   @media (max-width: $desktop) {
     position: absolute;
     top: 88px;
-    right: $base-spacing-unit;
     z-index: -1;
     display: block;
-    min-width: 160px;
+    width: 100%;
     padding: 20px 24px;
     border-radius: 8px;
-    border-top: 3px solid var(--primary-color);
     transform: translate3d(0, 10px, 0);
     opacity: 0;
     visibility: hidden;
     background-color: var(--background-color);
-    box-shadow: 0 15px 40px 5px rgba(20, 20, 20, 0.07);
     transition: all .25s ease;
+    left: 0;
+    margin: 0;
+    height: calc(100vh - 88px);
 
     &.is-visible {
       z-index: 100;
@@ -109,7 +115,7 @@
           padding: 10px 0;
           margin-bottom: 0;
           font-size: 1.125rem;
-          text-align: right;
+          // text-align: right;
           transition: color .25s ease;
 
           &::before {
@@ -284,6 +290,15 @@
 }
 
 /* Humburger Menu */
+.mobile-menu {
+  display: none;
+  @media only screen and (max-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
 .hamburger {
   width: 24px;
   height: 20px;
