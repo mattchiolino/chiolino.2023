@@ -55,11 +55,11 @@
     font-size: 32px;
     line-height: 1;
 
-    a {
-      &:hover {
-        box-shadow: 0 -1px 0 0 var(--primary-color) inset, 0 -3px 0 0 var(--primary-color) inset;
-      }
-    }
+    // a {
+    //   &:hover {
+    //     box-shadow: 0 -1px 0 0 var(--primary-color) inset, 0 -3px 0 0 var(--primary-color) inset;
+    //   }
+    // }
   }
 
   .work__description {

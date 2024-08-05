@@ -48,8 +48,8 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hi, I’m Matt.
-  hero__description: I like to make things for people to use on their phones and computers. And I like to teach people how to do it, too. <br><br>I'm currently a Senior UX Designer at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and an Adjunct HTML Instructor at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
+  hero__title: Hi, I’m Matt. I'm a Senior UX Designer living in Appleton, Wisconsin. I work at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and teach Website Design at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
+  hero__description: 
   hero__image: "/images/me.jpg"
 
 

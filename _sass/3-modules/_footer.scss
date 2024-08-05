@@ -101,8 +101,8 @@
     font-size: 18px;
     border-radius: 50%;
     will-change: transform;
-    color: var(--dark);
-    background-color: var(--light-gray);
+    color: var(--heading-font-color);
+    background-color: var(--background-alt-color);
     transition: $global-transition;
 
     &:hover {

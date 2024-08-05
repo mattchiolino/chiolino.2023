@@ -47,17 +47,18 @@
 
 :root[dark] {
   --primary-color: hsl(6, 98%, 60%);
+  --primary-dark: hsl(6, 98%, 40%);
   --white: hsl(60, 47%, 97%);
   --light-gray: hsl(60, 47%, 87%);
-  --gray: #9e9e9e;
-  --dark: #090A11;
+  --gray: hsl(202, 40%, 90%);
+  --dark: hsl(202, 40%, 5%);
   --nav-color: hsl(60, 47%, 97%);
-  --background: #090A11;
+  --background: hsl(202, 40%, 5%);
   --text: hsl(60, 47%, 97%);
 
   // Background Color
   --background-color: var(--background);
-  --background-alt-color: #1d1d23;
+  --background-alt-color: hsl(202, 40%, 10%);
 
   // Body Color
   --text-color: var(--gray);
@@ -65,16 +66,16 @@
   --text-alt-color-2: var(--gray);
 
   // Heading
-  --heading-font-color: var(--light-gray);
+  --heading-font-color: var(--white);
 
   // Link
-  --link-color: var(--light-gray);
-  --link-color-hover: var(--light-gray);
+  --link-color: var(--primary-color);
+  --link-color-hover: var(--white);
 
   // Button
   --button-color: var(--white);
   --button-background-color: var(--primary-color);
-  --button-background-hover: #1c5e67;
+  --button-background-hover: var(--primary-dark);
 
   // Border
   --border-color: #252629;
