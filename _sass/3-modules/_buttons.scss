@@ -11,7 +11,7 @@
   cursor: pointer;
   transition: all .2s;
   will-change: transform;
-  color: var(--dark);
+  color: var(--white);
   background-color: var(--primary-color);
 
   &:hover {
@@ -29,7 +29,7 @@
 
   &--primary {
     padding: 20px 32px;
-    color: var(--dark);
+    color: var(--white);
     background-color: var(--button-background-color);
 
     &:hover {

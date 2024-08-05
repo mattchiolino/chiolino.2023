@@ -6,32 +6,18 @@
 
       <div class="col col-6 col-d-12">
         <div class="hero__left">
-          {% if site.data.settings.author.author__avatar %}
-          <div class="hero__avatar">
-            <img class="lazy" data-src="{{ site.data.settings.author.author__avatar }}" alt="{{ site.data.settings.author.author__name }}">
-          </div>
-          {% endif %}
-          <h1 class="hero__title headline"><!--{{ site.data.settings.hero.hero__title }}-->Hi, I’m Matt. I help designers, coders, and business owners be better<br>
-            <em class="typewrite" data-period="2000" data-type="[&quot;designers.&quot;,&quot;coders.&quot;,&quot;business owners.&quot;]">
-              designers, coders, and business owners.<span class="wrap"></span>
-            </em>
-            </strong></h1>
+          <h1>{{ site.data.settings.hero.hero__title }}</h1>
           <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
-
-          {% if site.data.settings.mailchimp.enable == true %}
-          <div class="hero__subscribe">
-            <div class="button-group">
-              <a href="/contact/" class="button button--primary">Contact Me <i class="ion ion-md-arrow-forward"></i></a><a href="sms:+19209448148" class="button button--secondary">Text Me</a>
-            </div>
-          </div>
-          {% endif %}
+          <br>
+          <p class="hero__description">Feel free to connect with me on <a href="https://www.linkedin.com/in/mattchiolino" target="_blank">LinkedIn</a>, see some of the code I'm tinkering with on <a href="https://codepen.io/mattchiolino/pens/public" target="_blank">CodePen</a>, or browse more of my design work on <a href="https://dribbble.com/mattchiolino" target="_blank">Dribbble</a>.</p>
         </div>
       </div>
 
       <div class="col col-5 col-d-12">
         <div class="hero__right">
           <div class="hero__image">
-            <img class="lazy" data-src="{{ site.data.settings.hero.hero__image }}" alt="{{site.data.settings.author.author__name}}'s Picture">
+            <img class="lazy" data-src="{{ site.data.settings.hero.hero__image }}"
+              alt="{{site.data.settings.author.author__name}}'s Picture">
           </div>
         </div>
       </div>

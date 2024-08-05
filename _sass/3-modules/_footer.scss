@@ -32,7 +32,6 @@
   position: relative;
   z-index: 1;
   padding: 100px 0;
-  background-color: var(--dark);
 
   @media (max-width: $desktop) {
     padding: 80px 0;
@@ -47,13 +46,13 @@
   max-width: 780px;
   margin: 0 auto;
   text-align: center;
-  color: var(--light-gray);
+  color: var(--dark);
 }
 
 .footer__author-name {
   font-size: 48px;
   line-height: 1;
-  color: var(--light-gray);
+  color: var(--dark);
 
   @media (max-width: $desktop) {
     margin-bottom: 20px;
@@ -67,7 +66,7 @@
 .footer__author-bio {
   margin-bottom: 0;
   font-size: 20px;
-  opacity: .6;
+  color: var(--text-alt-color);
 
   @media (max-width: $desktop) {
     font-size: inherit;

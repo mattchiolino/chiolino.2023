@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Chiolino Creative # | Web Design, Web Development, Branding, and Social Media Marketing
+title: Matt Chiolino
 logo: /images/logo.svg
-description: Creative Portfolio Theme for Jekyll.
+description: Matt Chiolino is a Digital Product Designer based in Appleton, Wisconsin.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -16,8 +16,8 @@ menu__settings:
       url: '/about/'
     - title: 'Work'
       url: '/work/'
-    - title: 'Blog'
-      url: '/blog/'
+    # - title: 'Blog'
+    #   url: '/blog/'
     - title: 'Contact'
       url: '/contact'
     # - title: 'Pages'
@@ -32,14 +32,13 @@ menu__settings:
 # Author Settings
 author:
   author__name: Matt Chiolino
-  author__bio: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, business owners, and humans.
+  author__bio: Hi, I’m Matt. I like to make things for people to use on their phones and computers. And I like to teach people how to do it, too.
   author__avatar: '/images/avatar.jpeg'
 
 social:
-- {icon: "ion-logo-dribbble", link: "https://dribbble.com/mattchiolino"}
-- {icon: "ion-logo-github", link: "https://github.com/mattchiolino"}
 - {icon: "ion-logo-linkedin", link: "https://linkedin.com/in/mattchiolino"}
-- {icon: "ion-logo-twitter", link: "https://twitter.com/mattchiolino"}
+- {icon: "ion-logo-dribbble", link: "https://dribbble.com/mattchiolino"}
+- {icon: "ion-logo-codepen", link: "https://codepen.io/mattchiolino"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -49,9 +48,9 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hi, I’m Matt. I help designers, coders, and business owners be better designers, coders, and business owners.
-  hero__description:
-  hero__image: "/images/forest-bg.png"
+  hero__title: Hi, I’m Matt.
+  hero__description: I like to make things for people to use on their phones and computers. And I like to teach people how to do it, too. <br><br>I'm currently a Senior UX Designer at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and an Adjunct HTML Instructor at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
+  hero__image: "/images/me.jpg"
 
 
 #-------------------------------
@@ -80,15 +79,6 @@ logo__items:
   - name: Blaster Products
     link: "https://www.blasterproducts.com/"
     image: "/images/blasterproducts.svg"
-
-#-------------------------------
-# Newsletter
-mailchimp:
-  enable: true
-  mailchimp__identifier: chiolino.us12.list-manage.com/subscribe/post?u=3901645d74f7c0f077a2fd06b&amp;id=812262985a&amp;f_id=00b644e0f0 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp__input__text: Your email address...
-  mailchimp__button__text: Subscribe
-
 
 #-------------------------------
 # Work Settings
@@ -165,7 +155,7 @@ testimonial__items:
 #-------------------------------
 # Blog Section
 blog:
-  enable: true
+  enable: false
 
 blog__settings:
   blog__title: Blog
@@ -174,7 +164,7 @@ blog__settings:
 
 #-------------------------------
 # Footer Settings
-footer__background__image: "/images/me.jpg"
+# footer__background__image: "/images/me.jpg"
 
 #-------------------------------
 # Contact Settings
