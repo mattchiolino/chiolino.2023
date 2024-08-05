@@ -116,19 +116,9 @@
 }
 
 .dark-mode .logo svg > * {
-    fill: var(--primary-color);
+    fill: var(--text-color);
 }
 
-.typewrite {
-	height: 72px;
-    display: block;
-    .wrap {
-        background: var(--primary-color);
-        color: var(--dark);
-        padding: 0 4px;
-    }
-}
-
-.nav-button {
-    display: none;
+a:hover {
+    box-shadow: 0 -1px 0 0 var(--primary-color) inset, 0 -3px 0 0 var(--primary-color) inset;
 }
