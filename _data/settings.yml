@@ -19,7 +19,7 @@ menu__settings:
     # - title: 'Blog'
     #   url: '/blog/'
     - title: 'Contact'
-      url: '/contact'
+      url: '/contact/'
     # - title: 'Pages'
     #   submenu:
     #   - url: '/contact/'
@@ -48,8 +48,8 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hi, I’m Matt. I'm a Senior UX Designer living in Appleton, Wisconsin. I work at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and teach Website Design at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
-  hero__description: 
+  hero__title: Hi, I’m Matt. 
+  hero__description: I'm a Senior UX Designer living in Appleton, Wisconsin. I work at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and teach Website Design at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
   hero__image: "/images/me.jpg"
 
 
@@ -67,6 +67,10 @@ logo__items:
   - name: General Motors
     link: "https://www.gm.com/"
     image: "/images/generalmotors.svg"
+
+  - name: Optimal Digital Marketing
+    link: "https://www.optimal.marketing/"
+    image: "/images/optimalmarketing.svg"
 
   - name: Sleep Number
     link: "https://www.sleepnumber.com/"
@@ -170,7 +174,7 @@ blog__settings:
 # Contact Settings
 contact:
   email: xoqojzzj
-  description: Feel free to reach out with any questions you may have and I will do my best to respond within 2-3 days.
+  description: I’m based in Wisconsin, but I work with clients anywhere. Whether you have a quick question or a project in mind, let’s chat. I typically respond back in 2 business days &mdash; thank you for you patience!
 # NOTE
 # Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
 

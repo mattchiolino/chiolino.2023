@@ -1,90 +1,169 @@
 /* Color Scheme */
 
+// Define common variables once
+%common-vars {
+  // Text & background
+  --text-99: hsl(203, 41%, 99%);
+  --text-95: hsl(203, 41%, 95%);
+  --text-90: hsl(203, 41%, 90%);
+  --text-80: hsl(203, 41%, 80%);
+  --text-70: hsl(203, 41%, 70%);
+  --text-60: hsl(203, 41%, 60%);
+  --text-50: hsl(203, 41%, 50%);
+  --text-40: hsl(203, 41%, 40%);
+  --text-30: hsl(203, 41%, 30%);
+  --text-20: hsl(203, 41%, 20%);
+  --text-10: hsl(203, 41%, 10%);
+  --text-05: hsl(203, 41%, 5%);
+
+  // Accent 1
+  --accent1-98: hsl(170, 57%, 98%);
+  --accent1-95: hsl(170, 57%, 95%);
+  --accent1-90: hsl(170, 57%, 90%);
+  --accent1-80: hsl(170, 57%, 80%);
+  --accent1-70: hsl(170, 57%, 70%);
+  --accent1-60: hsl(170, 57%, 60%);
+  --accent1-50: hsl(170, 57%, 50%);
+  --accent1-45: hsl(170, 57%, 45%);
+  --accent1-40: hsl(170, 57%, 40%);
+  --accent1-30: hsl(170, 57%, 30%);
+  --accent1-20: hsl(170, 57%, 20%);
+  --accent1-10: hsl(170, 57%, 10%);
+  --accent1-05: hsl(170, 57%, 5%);
+
+  // Accent 2
+  --accent2-98: hsl(6, 98%, 98%);
+  --accent2-95: hsl(6, 98%, 95%);
+  --accent2-90: hsl(6, 98%, 90%);
+  --accent2-80: hsl(6, 98%, 80%);
+  --accent2-70: hsl(6, 98%, 70%);
+  --accent2-60: hsl(6, 98%, 60%);
+  --accent2-50: hsl(6, 98%, 50%);
+  --accent2-45: hsl(6, 98%, 45%);
+  --accent2-40: hsl(6, 98%, 40%);
+  --accent2-30: hsl(6, 98%, 30%);
+  --accent2-20: hsl(6, 98%, 20%);
+  --accent2-10: hsl(6, 98%, 10%);
+  --accent2-05: hsl(6, 98%, 5%);
+
+  // Accent 3
+  --accent3-98: hsl(49, 100%, 98%);
+  --accent3-95: hsl(49, 100%, 95%);
+  --accent3-90: hsl(49, 100%, 90%);
+  --accent3-80: hsl(49, 100%, 80%);
+  --accent3-70: hsl(49, 100%, 70%);
+  --accent3-60: hsl(49, 100%, 60%);
+  --accent3-50: hsl(49, 100%, 50%);
+  --accent3-45: hsl(49, 100%, 45%);
+  --accent3-40: hsl(49, 100%, 40%);
+  --accent3-30: hsl(49, 100%, 30%);
+  --accent3-20: hsl(49, 100%, 20%);
+  --accent3-10: hsl(49, 100%, 10%);
+  --accent3-05: hsl(49, 100%, 5%);
+}
+
 :root {
-  --primary-color: hsl(6, 98%, 60%);
-  --white: hsl(18, 100%, 98%);
-  --light-gray: hsl(18, 100%, 95%);
-  --lighten-gray: hsl(18, 100%, 80%);
-  --primary-dark: hsl(6, 98%, 40%);
-  --blue-gray: hsl(202, 40%, 30%);
-  --gray: hsl(202, 40%, 90%);
-  --background: hsl(18, 100%, 98%);
-  --text: hsl(202, 40%, 10%);
-  --dark: hsl(202, 40%, 10%);
+  @extend %common-vars;
+
+  --primary-color: var(--accent2-45);
+  --primary-tint: var(--accent2-95);
+  --primary-shade: var(--accent2-05);
+  --white: var(--accent1-98);
+  --light-gray: var(--accent1-95);
+  --lighten-gray: var(--accent1-80);
+  --primary-dark: var(--accent2-45);
+  --blue-gray: var(--text-30);
+  --gray: var(--text-90);
+  --background: var(--accent1-95);
+  --text: var(--text-05);
+  --dark: var(--text-05);
 
   // Background Color
-  --background-color: var(--white);
-  --background-alt-color: var(--light-gray);
+  --background-color: var(--background);
+  --background-alt-color: var(--accent1-90);
 
   // Body Color
-  --text-color: var(--dark);
-  --text-alt-color: var(--blue-gray);
-  --text-alt-color-2: var(--primary-dark);
+  --text-color: var(--text-05);
+  --text-alt-color: var(--text-40);
+  --text-alt-color-2: var(--accent1-40);
+
+  // Heading
+  --heading-font-color: var(--text-05);
+
+  // Link
+  --link-color: var(--accent1-30);
+  --link-color-hover: var(--accent1-20);
+
+  // Button
+  --button-color: var(--accent2-45);
+  --button-background-color: var(--accent2-95);
+  --button-background-hover: var(--accent2-90);
+  --button-border-color: var(--accent2-45);
+
+  // Border
+  --border-color: var(--text-90);
+  --border-alt-color: var(--accent1-80);
+
+  // Table
+  --th-color: var(--accent1-80);
+  --tr-color: var(--accent1-80);
+
+  // Syntax Highlighting
+  --syntax-highlighting-background: var(--text-90);
+}
+
+:root[dark] {
+  @extend %common-vars;
+
+  --primary-color: hsl(6, 98%, 60%);
+  --primary-dark: hsl(6, 98%, 40%);
+  --light-gray: hsl(60, 47%, 87%);
+  --gray: hsl(202, 40%, 90%);
+  --dark: hsl(202, 40%, 5%);
+  --background: var(--text-10);
+  --text: var(--text-90);
+
+  --primary-color: var(--accent2-45);
+  --primary-tint: var(--accent2-95);
+  --primary-shade: var(--accent2-05);
+  --white: var(--accent1-98);
+  --light-gray: var(--accent1-95);
+  --lighten-gray: var(--accent1-80);
+  --primary-dark: var(--accent2-45);
+  --blue-gray: var(--text-30);
+  --gray: var(--text-90);
+  --dark: var(--text-05);
+
+  // Background Color
+  --background-color: var(--background);
+  --background-alt-color: var(--accent1-05);
+
+  // Body Color
+  --text-color: var(--text);
+  --text-alt-color: var(--text);
+  --text-alt-color-2: var(--text);
 
   // Heading
   --heading-font-color: var(--text);
 
   // Link
-  --link-color: var(--primary-color);
-  --link-color-hover: var(--dark);
+  --link-color: var(--accent1-70);
+  --link-color-hover: var(--accent1-60);
 
   // Button
-  --button-color: var(--white);
-  --button-background-color: var(--primary-color);
-  --button-background-hover: var(--primary-dark);
+  --button-color: var(--accent2-60);
+  --button-background-color: var(--accent2-05);
+  --button-background-hover: var(--accent2-10);
+  --button-border-color: var(--accent2-60);
 
   // Border
-  --border-color: var(--gray);
-  --border-alt-color: var(--lighten-gray);
+  --border-color: var(--text-20);
+  --border-alt-color: var(--text-05);
 
   // Table
-  --th-color: var(--light-gray);
-  --tr-color: var(--light-gray);
+  --th-color: var(--text-20);
+  --tr-color: var(--text-20);
 
   // Syntax Highlighting
-  --syntax-highlighting-background: #f3f3f3;
-}
-
-:root[dark] {
-  --primary-color: hsl(6, 98%, 60%);
-  --primary-dark: hsl(6, 98%, 40%);
-  --white: hsl(60, 47%, 97%);
-  --light-gray: hsl(60, 47%, 87%);
-  --gray: hsl(202, 40%, 90%);
-  --dark: hsl(202, 40%, 5%);
-  --nav-color: hsl(60, 47%, 97%);
-  --background: hsl(202, 40%, 5%);
-  --text: hsl(60, 47%, 97%);
-
-  // Background Color
-  --background-color: var(--background);
-  --background-alt-color: hsl(202, 40%, 10%);
-
-  // Body Color
-  --text-color: var(--gray);
-  --text-alt-color: var(--gray);
-  --text-alt-color-2: var(--gray);
-
-  // Heading
-  --heading-font-color: var(--white);
-
-  // Link
-  --link-color: var(--primary-color);
-  --link-color-hover: var(--white);
-
-  // Button
-  --button-color: var(--white);
-  --button-background-color: var(--primary-color);
-  --button-background-hover: var(--primary-dark);
-
-  // Border
-  --border-color: #252629;
-  --border-alt-color: #080b12;
-
-  // Table
-  --th-color: #18181d;;
-  --tr-color: #080b12;
-
-  // Syntax Highlighting
-  --syntax-highlighting-background: #080b12;
+  --syntax-highlighting-background: var(--text-20);
 }

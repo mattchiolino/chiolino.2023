@@ -50,10 +50,8 @@
   line-height: 1;
   white-space: nowrap;
   will-change: transform;
-  color: var(--primary-color);
 
   &:hover {
-    color: var(--primary-dark);
     opacity: .85;
     i {
       transform: translateX(2px);

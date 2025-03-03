@@ -262,15 +262,6 @@
   margin: 0 auto 60px;
   color: var(--text-color);
 
-  a {
-    border-bottom: 1px solid var(--border-color);
-
-    &:hover {
-      color: var(--link-color);
-      border-bottom-color: var(--primary-color);
-    }
-  }
-
   img, .js-reframe {
     border-radius: $global-radius;
     overflow: hidden;
@@ -291,10 +282,10 @@
     user-select: none;
   }
 
-  .button {
-    border: none;
-    text-decoration: none;
-  }
+  // .button {
+  //   border: none;
+  //   text-decoration: none;
+  // }
 }
 
 /* Post Navigation */

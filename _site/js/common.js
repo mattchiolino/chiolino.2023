@@ -7,6 +7,49 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleTheme = document.querySelector(".toggle-theme-js"),
     btnScrollToTop = document.querySelector(".top");
 
+  /* =======================================================
+  // Theme Detection & Switcher
+  ======================================================= */
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      html.classList.add("dark-mode");
+      document.documentElement.setAttribute("dark", "");
+    } else {
+      html.classList.remove("dark-mode");
+      document.documentElement.removeAttribute("dark");
+    }
+  }
+
+  function detectSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function loadTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme(detectSystemTheme()); // Apply system preference if no saved theme
+    }
+  }
+
+  if (toggleTheme) {
+    toggleTheme.addEventListener("click", () => {
+      const currentTheme = html.classList.contains("dark-mode") ? "light" : "dark";
+      applyTheme(currentTheme);
+      localStorage.setItem("theme", currentTheme);
+    });
+  }
+
+  // Auto-detect system theme changes
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+    if (!localStorage.getItem("theme")) { // Only update if the user hasn't manually set a theme
+      applyTheme(event.matches ? "dark" : "light");
+    }
+  });
+
+  loadTheme(); // Apply theme on page load
 
   /* =======================================================
   // Menu + Theme Switcher
@@ -19,33 +62,10 @@ document.addEventListener("DOMContentLoaded", function() {
     menuList.classList.add("is-open");
   }
 
-
-  // Menu
   function menu() {
     menuToggle.classList.toggle("is-open");
     menuList.classList.toggle("is-visible");
   }
-
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
-
-
-  // Theme Switcher
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
-      document.documentElement.removeAttribute("dark");
-    } else {
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("dark", "");
-    }
-  }
-
 
   /* ================================================================
   // Stop Animations During Window Resizing and Switching Theme Modes
@@ -70,47 +90,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-
-  /* =======================
-  // Responsive Videos
-  ======================= */
-  reframe(".post iframe:not(.reframe-off), .page iframe:not(.reframe-off)");
-
-
   /* =======================
   // LazyLoad Images
   ======================= */
   var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
-  })
-
-
-  /* =======================
-  // Zoom Image
-  ======================= */
-  const lightense = document.querySelector(".page img, .post img, .gallery__image img"),
-  imageLink = document.querySelectorAll(".page a img, .post a img, .gallery__image a img");
-
-  if (imageLink) {
-    for (var i = 0; i < imageLink.length; i++) imageLink[i].parentNode.classList.add("image-link");
-    for (var i = 0; i < imageLink.length; i++) imageLink[i].classList.add("no-lightense");
-  }
-
-  if (lightense) {
-    Lightense(".page img:not(.no-lightense), .post img:not(.no-lightense), .gallery__image img:not(.no-lightense)", {
-    padding: 60,
-    offset: 30
-    });
-  }
-
-
-  // =====================
-  // Load More Posts
-  // =====================
-  var load_posts_button = document.querySelector('.load-more-posts');
-
-  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".grid__post"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
-
+  });
 
   /* =======================
   // Scroll Top Button
@@ -125,14 +110,13 @@ document.addEventListener("DOMContentLoaded", function() {
         top: 0,
         left: 0,
         behavior: "smooth"
-      })
+      });
     }
   });
 
 });
 
 // Typewriter Effect for Hero
-
 class TxtType {
   constructor(el, toRotate, period) {
     this.toRotate = toRotate;

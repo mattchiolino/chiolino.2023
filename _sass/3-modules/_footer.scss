@@ -52,7 +52,7 @@
 .footer__author-name {
   font-size: 48px;
   line-height: 1;
-  color: var(--dark);
+  color: var(--text);
 
   @media (max-width: $desktop) {
     margin-bottom: 20px;
@@ -101,13 +101,12 @@
     font-size: 18px;
     border-radius: 50%;
     will-change: transform;
-    color: var(--heading-font-color);
     background-color: var(--background-alt-color);
     transition: $global-transition;
 
     &:hover {
       color: var(--white);
-      background-color: var(--primary-color);
+      background-color: var(--link-color);
     }
   }
 
