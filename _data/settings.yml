@@ -50,7 +50,7 @@ hero:
   enable: true
   # hero__title: Hi, I’m Matt. 
   hero__title: Good design has a job to do. I make sure it does it.
-  hero__description: "Staff Product Designer. Over a decade XP across enterprise SaaS, consumer products, and digital marketing. I think in terms of intent, hierarchy, and friction — and I'm most useful when there's a clear outcome attached to the work. Available for selective freelance engagements.<br>Wisconsin-based. Remote-native. I ask a lot of questions before I open Figma."
+  hero__description: Staff Product Designer. Over a decade XP across enterprise SaaS, consumer products, and digital marketing. I think in terms of intent, hierarchy, and friction — and I'm most useful when there's a clear outcome attached to the work. Available for selective freelance engagements.<br>Wisconsin-based. Remote-native. I ask a lot of questions before I open Figma.
   hero__image: "/images/me.jpg"
 
 
