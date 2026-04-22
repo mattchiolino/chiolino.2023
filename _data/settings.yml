@@ -2,7 +2,7 @@
 # Site Settings
 title: Matt Chiolino
 logo: /images/logo.svg
-description: Matt Chiolino is a Digital Product Designer based in Appleton, Wisconsin.
+description: Matt Chiolino is a Staff Product Designer based in Appleton, Wisconsin.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -48,8 +48,9 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hi, I’m Matt. 
-  hero__description: I'm a Senior UX Designer living in Appleton, Wisconsin. I work at <a href="https://www.jewelersmutual.com" target="_blank">Jewelers Mutual</a> and teach Website Design at <a href="https://www.fvtc.edu" target="_blank">Fox Valley Technical College</a>.
+  # hero__title: Hi, I’m Matt. 
+  hero__title: Good design has a job to do. I make sure it does it.
+  hero__description: Staff Product Designer. Over a decade XP across enterprise SaaS, consumer products, and digital marketing. I think in terms of intent, hierarchy, and friction — and I'm most useful when there's a clear outcome attached to the work. Available for selective freelance engagements.<br>Wisconsin-based. Remote-native. I ask a lot of questions before I open Figma.
   hero__image: "/images/me.jpg"
 
 
