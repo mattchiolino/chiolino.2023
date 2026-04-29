@@ -100,8 +100,11 @@ logo__items:
 work:
   enable: true
   work__title: Work
-  work__description: Here's a short list of some projects I've had the pleasure of
-    being involved in. For more up-to-date work, please contact me directly.
+  work__description: These case studies represent a cross-section of the kind of
+    problems I find most interesting — operational complexity, underserved
+    markets, products that have to earn user trust to function. Each one
+    involved ambiguity, competing stakeholder priorities, and a clear business
+    outcome attached to the design work.
 
 #-------------------------------
 # Testimonials Section
