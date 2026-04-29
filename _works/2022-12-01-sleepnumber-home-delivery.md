@@ -1,6 +1,6 @@
 ---
 title: Dream Delivery
-description: Tucking In Efficiency and Waking Up Productivity
+description: How a field research-driven redesign reduced inventory loss and restored technician trust at Sleep Number
 category: Mobile, Web, Research
 date: 2022-12-01 08:01:35 +0300
 role: Experience Manager
