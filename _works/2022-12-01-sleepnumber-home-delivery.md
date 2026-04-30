@@ -7,21 +7,23 @@ role: Experience Manager
 image: '/images/work/sleepnumber-cover.png'
 ---
 
-## Introduction
+## The Business Problem
 
-As the Lead UX Designer and Experience Manager at Sleep Number, we embarked on a mission to comprehensively enhance the home delivery experience. By immersing myself in every facet of the customer journey, we sought to identify bottlenecks and areas of improvement.
+Sleep Number's home delivery operation ran on a homegrown mobile app that had quietly become a liability. Inventory was walking out the door — not through theft, but through a broken returns process that technicians didn't trust and couldn't reliably complete. Customer care agents were manually resending return labels. The app timed out mid-job, wiping data. Nobody had mapped the full picture.
 
-## The Challenge
+This wasn't a UX polish project. It was a revenue and retention problem wearing a UX costume.
 
-The homegrown mobile application for delivery and warehouse technicians, along with the archaic customer care system, showed signs of inefficiencies and pain points. There were issues with inventory management, a convoluted returns process for warehouse and delivery technicians, forced app timeouts leading to data loss, and insufficient feedback mechanisms, among other concerns.
+## My Role
 
-## The Research
+Lead UX Designer and Experience Manager. I owned research, synthesis, design, and stakeholder alignment end-to-end across the delivery, warehouse, and customer care touchpoints.
 
-To gain a holistic understanding, we conducted the following activities:
+## Discovery: Getting Out of the Building
 
-1. Observational Research: we rode along with delivery technicians, witnessed firsthand home deliveries, observed warehouse technicians using our proprietary mobile app, and shadowed customer care agents.
-2. Stakeholder Interviews: we held time with several key stakeholders along the supply chain & logistics spaces, listening to their pain points and concerns with how the current, physical process was performing.
-3. Service Blueprint: All of the information gathered along the way lead me to map out an end-to-end <a href="https://www.nngroup.com/articles/service-blueprints-definition/" target="_blank">service blueprint</a>, which spanned from order placement, to delivery, to product setup, and into the return/exchange process.
+Before touching Figma I spent time in the field — riding along with delivery technicians, observing warehouse staff use the app in real conditions, and shadowing customer care agents handling exchanges and returns.
+
+What I found didn't match what stakeholders thought the problem was. The returns flow wasn't just confusing — technicians had learned to work around it in ways that looked like compliance but produced data that was useless downstream. The app timeout issue was causing technicians to restart jobs mid-delivery. Customer care agents had developed their own informal label-resending queue because the system made it too hard to do it right the first time.
+
+I mapped all of it into an end-to-end service blueprint — order placement through return and exchange — which became the shared artifact that aligned stakeholders on the actual scope of the problem.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -29,16 +31,23 @@ To gain a holistic understanding, we conducted the following activities:
   </div>
 </div>
 
-## The Solution
+## The Bets We Made
 
-### Mobile App Redesign
+The most significant finding didn't come from a stakeholder interview or a data pull — it came from riding along with technicians in the field. Missed deliveries were being sent all the way back to the main distribution hub, rescheduled, and set for redelivery two weeks or more out. By that point, many customers had canceled out of frustration — and the returned inventory couldn't be reshipped. It got parted out.
+
+The hold for delivery queue was the direct response to that insight. Rather than routing missed deliveries back to the hub, technicians could now hold inventory regionally, track it in the app, and retry delivery within two to three days.
+
+### Hold for Delivery Queue
+
 While improved inventory management was the foremost concern, accessibility, consistency, and usability was paramount. we redesigned all the mobile app screens to ensure a smoother and more intuitive user experience using a component-based, atomic design approach.
 
-### Streamlined Returns
-To mitigate physical inventory loss, we crafted a direct returns process within the app.
+### Streamlined Returns with Gamification
+
+The core insight: technicians weren't skipping the returns process because they were lazy — they skipped it because it was unreliable. We rebuilt the flow to be faster and more forgiving, then added a gamification layer that made error-free returns a visible team metric. Compliance isn't a UX problem you solve with better UI alone — you need behavioral incentive.
 
 ### Session Management
-I implemented a "still working?" prompt, addressing the critical issue of the app logging users out, which previously led to data loss.
+
+A keep-alive 'Still working?' prompt addressed app timeouts that were causing data loss on active jobs. Small lift, high-trust signal to technicians that the app was on their side.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -46,8 +55,9 @@ I implemented a "still working?" prompt, addressing the critical issue of the ap
   </div>
 </div>
 
-### Feedback Integration
-A new help and feedback flow was introduced, allowing for continuous improvement suggestions when in-depth observations or testing wasn't feasible.
+### Customer Care Wizard UI
+
+Agents were navigating a fragmented system to facilitate exchanges. A guided wizard reduced decision points and built label generation directly into the flow — eliminating the manual resend queue entirely.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -56,8 +66,9 @@ A new help and feedback flow was introduced, allowing for continuous improvement
   </div>
 </div>
 
-### Gamification 
-I added a gamification element to foster compliance with the revamped returns process. The goal was to make "error-free" returns a collective objective.
+### Super-User Profiles for Smaller Markets
+ 
+Smaller markets shared devices across technicians. Profile switching without full logout reduced friction and fixed data attribution problems in a segment that was disproportionately impacted.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -67,9 +78,6 @@ I added a gamification element to foster compliance with the revamped returns pr
   </div>
 </div>
 
-### User Profiles for Smaller Markets 
-Given the unique dynamics of smaller markets, "super users" were enabled, who could efficiently switch between profiles without logging out of the application.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/work/sleepnumber/location_1.png" loading="lazy" alt="Work">
@@ -78,8 +86,9 @@ Given the unique dynamics of smaller markets, "super users" were enabled, who co
   </div>
 </div>
 
-### Customer Care Wizard UI
-I designed an interactive wizard UI to guide customer care agents. This interface made facilitating customer exchanges more straightforward, preventing returns, preserving sales, and ensuring customer satisfaction.
+## Outcomes
+
+Physical inventory loss dropped to near zero following the introduction of the hold for delivery queue. That single feature — born entirely from field observation — represented the clearest return on the research investment.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -87,8 +96,9 @@ I designed an interactive wizard UI to guide customer care agents. This interfac
   </div>
 </div>
 
-### Improved Return Label Generation
-Finally, we addressed a significant pain point in the return process. Now, customer care agents could generate return labels seamlessly, eliminating the previously common issue of having to resend them.
+The gamification of returns produced something unexpected: technicians started competing. Load truck-off competitions emerged organically, with teams comparing who could complete load-in and load-out fastest. Compliance became a team dynamic, not a mandate.
+
+Customer care agents reported significantly fewer return label resend requests following the wizard UI rollout, reducing overhead that had become normalized as just part of the job.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -96,16 +106,6 @@ Finally, we addressed a significant pain point in the return process. Now, custo
   </div>
 </div>
 
-## The Outcome
+## What I'd Do Differently
 
-Post-implementation, Sleep Number witnessed:
-
-* A significant drop in physical inventory loss.
-* Improved efficiency among delivery and warehouse technicians.
-* Stronger delivery and warehouse technician confidence in using the app.
-* Enhanced customer satisfaction due to reduced errors and more efficient exchanges.
-* Increased agent productivity and fewer issues with label resending.
-
-## Conclusion
-
-By diving deep into the heart of Sleep Number's home delivery experience, the team was able to identify core issues and implement strategic solutions. The comprehensive overhaul not only made the system more efficient but also significantly enhanced user experience and customer satisfaction. This project underscored the importance of hands-on experience and observation in crafting effective UX solutions.
+Establishing clearer baseline metrics before the project started would have made the outcome story tighter. We knew things improved — we were less precise about by how much. On future engagements I instrument the measurement plan before design begins.

@@ -6,6 +6,7 @@ date: 2022-10-30 08:01:35 +0300
 client: Resilience Neurologic Phyiscal Therapy
 role: Web Designer
 image: '/images/work/resilience-cover.png'
+published: false
 ---
 
 In late 2022, Kaylin, a devoted physical therapist specializing in neurological conditions and disabilities, reached out to develop a highly accessible, patient-centric website for her new independent clinic. Frustrated by the bureaucratic hurdles in the traditional healthcare system, she sought to focus on personalized, one-on-one patient care &mdash; in stark contrast to the "get 'em in, get 'em out" mindset of traditional hospital settings.

@@ -5,20 +5,20 @@
 }
 
 .work__image {
-  // // position: relative;
-  //   // display: block;
-  //   // width: 100%;
-  //   /* aspect-ratio: 1 / 1; */
-  //   // border-radius: 1rem;
-  //   user-select: none;
-  //   // transform: translate(0);
-  //   overflow: hidden;
-  //   /* background-color: var(--background-alt-color); */
-  //   /* text-align: center; */
-  //   display: flex;
+  position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    user-select: none;
+    transform: translate(0);
+    overflow: hidden;
+    background-color: var(--background-alt-color);
+    text-align: center;
+    display: flex;
 
   &:hover {
-    // transform: translateY(-4px);
+    transform: translateY(-4px);
 
     img {
       transition: $global-transition;
@@ -26,14 +26,14 @@
   }
 
   img {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
-    // object-fit: cover;
-    // border-radius: $global-radius;
-    // pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $global-radius;
+    pointer-events: none;
   }
 
   @supports not (aspect-ratio: 1/1) {
@@ -57,11 +57,11 @@
     font-size: 32px;
     line-height: 1;
 
-    // a {
-    //   &:hover {
-    //     box-shadow: 0 -1px 0 0 var(--primary-color) inset, 0 -3px 0 0 var(--primary-color) inset;
-    //   }
-    // }
+    a {
+      &:hover {
+        box-shadow: 0 -1px 0 0 var(--primary-color) inset, 0 -3px 0 0 var(--primary-color) inset;
+      }
+    }
   }
 
   .work__description {

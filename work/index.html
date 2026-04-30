@@ -1,16 +1,19 @@
 ---
 layout: default
 title: My work
-description: Here's a short list of some projects I've had the pleasure of being involved in. For more up-to-date work, please contact me directly.
+description: These case studies represent a cross-section of the kind of problems I find most interesting — operational
+complexity, underserved markets, products that have to earn user trust to function. Each one involved ambiguity,
+competing stakeholder priorities, and a clear business outcome attached to the design work.
 ---
 
 <div class="container">
   <div class="page-section-head">
-    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.work.work__title }}{% endif %}</h1>
+    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.work.work__title }}{%
+      endif %}</h1>
     {% if page.description %}
-      <p class="page-description">{{ page.description }}</p>
+    <p class="page-description">{{ page.description }}</p>
     {% else site.data.settings.work.work__description %}
-      <p class="page-description">{{ site.data.settings.work.work__description }}</p>
+    <p class="page-description">{{ site.data.settings.work.work__description }}</p>
     {% endif %}
   </div>
 </div>
@@ -18,22 +21,22 @@ description: Here's a short list of some projects I've had the pleasure of being
 <div class="work-page container animate">
   <div class="row">
     {% for work in site.works reversed %}
-      <article class="work col col-4 col-d-6 col-t-12">
-        <div class="work__content">
-          <a href="{{ work.url }}" class="work__image">
-            <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
-          </a>
-          <div class="work__info">
-            {% if work.category %}
-            <div class="work__category">{{ work.category }}</div>
-            {% endif %}
-            <h3 class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
-            {% if work.description %}
-            <p class="work__description">{{ work.description }}</p>
-            {% endif %}
-          </div>
+    <article class="work col col-6 col-d-6 col-t-12">
+      <div class="work__content">
+        <a href="{{ work.url }}" class="work__image">
+          <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
+        </a>
+        <div class="work__info">
+          {% if work.category %}
+          <div class="work__category">{{ work.category }}</div>
+          {% endif %}
+          <h3 class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
+          {% if work.description %}
+          <p class="work__description">{{ work.description }}</p>
+          {% endif %}
         </div>
-      </article>
+      </div>
+    </article>
     {% endfor %}
   </div>
 </div>

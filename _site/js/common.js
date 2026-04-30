@@ -183,3 +183,23 @@ window.onload = function() {
     }
   }
 };
+
+// Grid spotlight follow cursor
+(function () {
+  const body = document.body;
+  let rafId;
+
+  document.addEventListener('mousemove', (e) => {
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      // clientX/Y is always viewport-relative — matches position: fixed perfectly
+      body.style.setProperty('--cursor-x', `${e.clientX}px`);
+      body.style.setProperty('--cursor-y', `${e.clientY}px`);
+      body.classList.remove('cursor-left');
+    });
+  });
+
+  document.addEventListener('mouseleave', () => {
+    body.classList.add('cursor-left');
+  });
+})();

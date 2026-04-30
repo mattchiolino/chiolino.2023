@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Matt Chiolino</title>
-        <description>Matt Chiolino is a Digital Product Designer based in Appleton, Wisconsin.</description>
-        <link>http://0.0.0.0:4000/</link>
-        <atom:link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 05 Mar 2025 06:15:58 -0600</pubDate>
-        <lastBuildDate>Wed, 05 Mar 2025 06:15:58 -0600</lastBuildDate>
+        <description>Matt Chiolino is a Staff Product Designer based in Appleton, Wisconsin.</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Thu, 30 Apr 2026 06:41:02 -0500</pubDate>
+        <lastBuildDate>Thu, 30 Apr 2026 06:41:02 -0500</lastBuildDate>
         <generator>Jekyll v4.3.2</generator>
         
             <item>
@@ -40,8 +40,8 @@
 &lt;p&gt;So, the next time you find yourself doubting your abilities or getting frustrated with your progress, take a deep breath, be patient, and remember my guitar. The journey is worth it, and the struggle is just part of the process. Embrace it. It’s through the journey that we truly grow.&lt;/p&gt;
 </description>
                 <pubDate>Mon, 07 Aug 2023 01:52:00 -0500</pubDate>
-                <link>http://0.0.0.0:4000/blog/embracing-the-journey</link>
-                <guid isPermaLink="true">http://0.0.0.0:4000/blog/embracing-the-journey</guid>
+                <link>http://localhost:4000/blog/embracing-the-journey</link>
+                <guid isPermaLink="true">http://localhost:4000/blog/embracing-the-journey</guid>
                 
                 <category>career advice</category>
                 
